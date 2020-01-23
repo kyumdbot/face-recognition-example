@@ -8,7 +8,6 @@ $ git clone https://github.com/kyumdbot/face-recognition-example.git
 $ cd face-recognition-example
 ```
 
-
 ## Usage
 
 1. Create database:
@@ -23,7 +22,7 @@ $ python3 create_database.py
 $ python3 take_a_face.py "Your Name"
 ```
 
-Press 'y' key to take a photo.  
+(Press 'y' key to take a photo.)
 
 
 3. Face recognition
@@ -31,3 +30,6 @@ Press 'y' key to take a photo.
 ```
 $ python3 face_recognition_camera.py
 ```
+
+(Press 'q' key to quit.)
+
