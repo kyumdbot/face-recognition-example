@@ -1,9 +1,11 @@
-## Install library
+## Setup
 
 ```
 $ pip3 install numpy
 $ pip3 install dlib
 $ pip3 install face_recognition
+$ git clone https://github.com/kyumdbot/face-recognition-example.git
+$ cd face-recognition-example
 ```
 
 
