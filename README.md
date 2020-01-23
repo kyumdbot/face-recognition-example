@@ -22,7 +22,7 @@ $ python3 create_database.py
 $ python3 take_a_face.py "Your Name"
 ```
 
-(Press 'y' key to take a photo.)
+ ( Press 'y' key to take a photo. )
 
 
 3. Face recognition
@@ -31,5 +31,5 @@ $ python3 take_a_face.py "Your Name"
 $ python3 face_recognition_camera.py
 ```
 
-(Press 'q' key to quit.)
+ ( Press 'q' key to quit. )
 
