@@ -23,6 +23,9 @@ $ python3 create_database.py
 $ python3 take_a_face.py "Your Name"
 ```
 
+Press 'y' key to take a photo.  
+
+
 3. Face recognition
 
 ```
