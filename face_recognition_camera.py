@@ -34,8 +34,8 @@ for row in db_rows:
 
 # Set webcam
 cap = cv2.VideoCapture(0)
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+#cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+#cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
 # Initialize some variables
 face_locations = []
@@ -57,7 +57,7 @@ while(cap.isOpened()):
     # Only process every other frame of video to save time
     if process_this_frame:
         # Find all the faces and face encodings in the current frame of video
-        face_locations = face_recognition.face_locations(rgb_small_frame)
+        face_locations = face_recognition.face_locations(rgb_small_frame, model="cnn")
         face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
 
         face_names = []
@@ -92,7 +92,7 @@ while(cap.isOpened()):
         cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
 
         # Draw a label with a name below the face
-        cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
+        cv2.rectangle(frame, (left, bottom - 28), (right, bottom), (0, 0, 255), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
         cv2.putText(frame, name, (left + 6, bottom - 6), font, 0.7, (255, 255, 255), 1)
 
