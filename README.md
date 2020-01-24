@@ -27,7 +27,7 @@ $ cd ~
 $ pip3 install face_recognition
 ```
 
-4. clone this repo:
+4. Clone this repo:
 
 ```
 $ git clone https://github.com/kyumdbot/face-recognition-example.git
