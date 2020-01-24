@@ -1,9 +1,35 @@
 ## Setup
 
+1. Install numpy:
+
 ```
 $ pip3 install numpy
-$ pip3 install dlib
+```
+
+2. Compile and Install dlib:
+
+```
+$ mkdir temp; cd temp
+$ git clone https://github.com/davisking/dlib.git
+$ cd dlib
+$ mkdir build; cd build
+$ cmake .. -DDLIB_USE_CUDA=1 -DUSE_AVX_INSTRUCTIONS=1
+$ cmake --build .
+$ cd ..
+$ python3 setup.py install
+$ sudo ldconfig
+$ cd ~
+```
+
+3. Install face_recognition:
+
+```
 $ pip3 install face_recognition
+```
+
+4. clone this repo:
+
+```
 $ git clone https://github.com/kyumdbot/face-recognition-example.git
 $ cd face-recognition-example
 $ mkdir images
